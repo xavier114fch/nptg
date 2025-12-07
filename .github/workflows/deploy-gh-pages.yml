@@ -27,6 +27,7 @@ jobs:
         run: |
           mkdir -p locations
           cp -r uk-bus-open-data/data/nptg/* locations/
+          rm -rf uk-bus-open-data
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v4
